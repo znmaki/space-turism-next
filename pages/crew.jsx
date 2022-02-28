@@ -24,7 +24,7 @@ const Crew = () => {
                                 <h1 className="uppercase font-Bellefair text-[3.25rem] my-4">
                                     {name}
                                 </h1>
-                                <p className="font-Barlow text-[1.125rem] text-blue-opacity w-full max-w-[444px] leading-[2rem] word-spacing-1 mx-auto">
+                                <p className="font-Barlow text-[1.125rem] text-blue-opacity w-full max-w-[444px] leading-[2rem] word-spacing-1 mx-auto lg:mx-auto xl:mx-0">
                                     {bio}
                                 </p>
                             </article>
