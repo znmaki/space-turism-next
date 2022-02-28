@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@layer components {
+  .btn-primary {
+    @apply uppercase text-white tracking-wider inline-block text-base;
+  }
+
+  .word-spacing-1 {
+    word-spacing: 0.1rem;
+  }
+
+  .title-distance {
+    @apply uppercase font-BarlowCondensed text-[0.875rem] text-blue-opacity tracking-[0.3rem] mr-[2rem];
+  }
+
+  .info-distance {
+    @apply block font-Bellefair text-[1.75rem] text-white mt-5 font-bold tracking-normal;
+  }
+}
