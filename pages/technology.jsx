@@ -41,11 +41,11 @@ const Technology = () => {
                         </section>
 
                         <div className="m-auto hidden relative xl:w-[515px] xl:h-[527px] xl:block xl:order-3">
-                            <Image src={portrait} layout='fill' alt={image} />
+                            <Image src={portrait} layout='fill' alt={name} />
                         </div>
 
                         <div className='-mx-[3rem] xl:hidden mt-[3rem]'>
-                            <Image src={landscape} layout='responsive' width={700} height={185.5} alt={image} />
+                            <Image src={landscape} layout='responsive' width={700} height={185.5} alt={name} />
                         </div>
                     </main>
                 </div>
