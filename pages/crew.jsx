@@ -9,16 +9,16 @@ const crew = () => {
 
     const [indexContent, setIndexContent] = useState(0);
     /* console.log(data.crew[indexContent]); */
-    const { bio, images: { png, webp }, name, role } = data.crew[indexContent];
+    const { bio, images: { png }, name, role } = data.crew[indexContent];
 
     return (
-        <Layout pagina='Crew'>            
+        <Layout pagina='Crew'>
             <div className="bg-crew-mobile bg-[length:100%_100%] h-full min-h-screen xl:bg-crew-desktop lg:bg-crew-tablet sm:bg-crew-mobile">
                 <div className="max-w-[1450px] m-auto pt-[2rem] px-[3rem]">
                     <Header />
                     <main className="grid items-center mt-[5rem] xl:mt-0 xl:grid-cols-2 xl:pt-[8rem] xl:pl-[6.25rem]">
                         <section className="text-white text-center xl:text-left xl:ml-[20px] lg:text-center sm:text-center">
-                        <h2 className="text-[1.75rem] uppercase font-BarlowCondensed text-white tracking-[0.2rem] text-left"><span className="text-white/50">02</span> meet your crew</h2>
+                            <h2 className="text-[1.75rem] uppercase font-BarlowCondensed text-white tracking-[0.2rem] text-left"><span className="text-white/50">02</span> meet your crew</h2>
                             <article className='mt-[5rem] mb-[2rem]'>
                                 <h2 className='uppercase text-[2rem] font-Bellefair opacity-50'>{role}</h2>
                                 <h1 className="uppercase font-Bellefair text-[3.25rem] my-4">
@@ -41,7 +41,7 @@ const crew = () => {
                         </section>
 
                         <div className="flex flex-row m-auto relative w-[170px] h-[170px] xl:w-[572px] xl:h-[572px] lg:w-[300px] lg:h-[300px] sm:w-[170px] sm:h-[170px] border-b-[2px] border-b-slate-50/50">
-                            <Image src={png} layout='fill' />
+                            <Image src={png} layout='fill' alt={name} />
                         </div>
                     </main>
                 </div>

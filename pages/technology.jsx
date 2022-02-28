@@ -29,7 +29,7 @@ const technology = () => {
 
                                 )}
                             </article>
-                            <article>                                
+                            <article>
                                 <h2 className='uppercase font-Bellefair opacity-50 text-[14px] lg:text-[1rem]'>the terminology...</h2>
                                 <h1 className="uppercase font-Bellefair my-4 text-[35px] xl:text-[3.25rem] lg:text-[2.5rem]">
                                     {name}
@@ -41,11 +41,11 @@ const technology = () => {
                         </section>
 
                         <div className="m-auto hidden relative xl:w-[515px] xl:h-[527px] xl:block xl:order-3">
-                            <Image src={portrait} layout='fill' />
+                            <Image src={portrait} layout='fill' alt={image} />
                         </div>
 
                         <div className='-mx-[3rem] xl:hidden mt-[3rem]'>
-                            <Image src={landscape} layout='responsive' width={700} height={185.5} />
+                            <Image src={landscape} layout='responsive' width={700} height={185.5} alt={image} />
                         </div>
                     </main>
                 </div>

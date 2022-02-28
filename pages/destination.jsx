@@ -10,7 +10,7 @@ const destination = () => {
     /* console.log(data.destinations[indexContent])
     console.log(indexContent) */
 
-    const { description, distance, name, travel, images: { png, webp } } = data.destinations[indexContent];
+    const { description, distance, name, travel, images: { png } } = data.destinations[indexContent];
 
     return (
         <Layout pagina={`${data.destinations[indexContent].name}`}>
@@ -21,7 +21,7 @@ const destination = () => {
                         <div>
                             <h2 className="text-[1.75rem] uppercase font-BarlowCondensed text-white tracking-[0.2rem]"><span className="text-white/50">01</span> pick your destination</h2>
                             <div className="flex flex-row m-auto relative w-[170px] h-[170px] mt-[5rem] mb-[2rem] xl:w-[445px] xl:h-[445px] lg:w-[300px] lg:h-[300px] sm:w-[170px] sm:h-[170px]">
-                                <Image src={png} layout='fill' />
+                                <Image src={png} layout='fill' alt={name} />
                             </div>
                         </div>
 
