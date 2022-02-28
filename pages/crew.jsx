@@ -5,7 +5,7 @@ import data from '../db/data.json'
 import { useState } from "react";
 import Image from "next/image";
 
-const crew = () => {
+const Crew = () => {
 
     const [indexContent, setIndexContent] = useState(0);
     /* console.log(data.crew[indexContent]); */
@@ -50,4 +50,4 @@ const crew = () => {
     )
 }
 
-export default crew
+export default Crew

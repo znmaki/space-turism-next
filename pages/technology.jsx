@@ -5,7 +5,7 @@ import data from '../db/data.json'
 import { useState } from "react";
 import Image from "next/image";
 
-const technology = () => {
+const Technology = () => {
     console.log(data.technology)
 
     const [indexContent, setIndexContent] = useState(0);
@@ -54,4 +54,4 @@ const technology = () => {
     )
 }
 
-export default technology
+export default Technology

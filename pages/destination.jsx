@@ -4,7 +4,7 @@ import data from '../db/data.json'
 import { useState } from "react";
 import Image from "next/image";
 
-const destination = () => {
+const Destination = () => {
 
     const [indexContent, setIndexContent] = useState(0);
     /* console.log(data.destinations[indexContent])
@@ -52,4 +52,4 @@ const destination = () => {
     )
 }
 
-export default destination
+export default Destination
